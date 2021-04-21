@@ -1,0 +1,13 @@
+# This is base config
+[base]
+    debug_mode="debug"
+    time_location="Asia/Shanghai"
+[http]
+    addr =":7001"                       # 监听地址, default ":8700"
+    read_timeout = 10                   # 读取超时时长
+    write_timeout = 10                  # 写入超时时长
+    max_header_bytes = 20               # 最大的header大小，二进制位长度
+[log]
+    #log_level = "error"         #日志打印错误级别
+    log_level = "trace"         #日志打印最低级别
+

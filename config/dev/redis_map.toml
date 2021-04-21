@@ -1,0 +1,8 @@
+# this is redis config file
+[list]
+    [list.default]
+        addr = "127.0.0.1:6379"
+        password =""
+        db = 0
+        read_timeout = 5
+        write_timeout = 5
