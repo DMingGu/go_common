@@ -59,7 +59,6 @@ func RedisConfDo(trace *TraceContext, name string, args ...interface{}) (interfa
 		})
 		return nil, err
 	}
-	defer c.Close()
 	startExecTime := time.Now()
 	var ctx = context.Background()
 	reply, err := c.Do(ctx, args...).Result()
